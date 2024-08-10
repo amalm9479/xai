@@ -209,8 +209,9 @@ let startIndex = 0; // Set the start index directly
       console.log('Launching Firefox browser...');
       
       const options = new firefox.Options();
-      options.setProfile('C:/Users/User/AppData/Roaming/Mozilla/Firefox/Profiles/0ti9w4vp.default-release');
-      options.setBinary('C:/Program Files/Mozilla Firefox/firefox.exe');
+    options.setBinary('/usr/bin/firefox');  // Use the correct path to the Firefox binary
+    options.setProfile('/home/render/.mozilla/firefox/your-profile.default-release');  // Use the correct path to the Firefox profile
+    
       options.addArguments('-headless'); // Run in headless mode
       options.addArguments('-foreground=false'); 
       // Disable image loading
