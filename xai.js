@@ -181,7 +181,7 @@ async function launchFirefoxWithProfile() {
     '0x4551dD89f413eb813602D043E874C9083C37FC42'
 ];
 
-let startIndex = 0; // Set the start index directly
+  let startIndex = 0; // Set the start index directly
 
   async function startAutomation() {
     let driver;
@@ -207,9 +207,9 @@ let startIndex = 0; // Set the start index directly
     try {
       console.log('Launching Firefox browser...');
       
-      const options = new firefox.Options();
-    options.setBinary('/usr/bin/firefox');  // Use the correct path to the Firefox binary
-    options.setProfile('/home/render/.mozilla/firefox/your-profile.default-release');  // Use the correct path to the Firefox profile
+      const options = new Options();
+      options.setBinary('/usr/bin/firefox');  // Use the correct path to the Firefox binary
+      options.setProfile('/home/render/.mozilla/firefox/your-profile.default-release');  // Use the correct path to the Firefox profile
     
       options.addArguments('-headless'); // Run in headless mode
       options.addArguments('-foreground=false'); 
