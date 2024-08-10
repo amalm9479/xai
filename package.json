@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +18,5 @@
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-user-data-dir": "^2.4.1",
     "selenium-webdriver": "^4.22.0"
-  },
-
+  }
 }
