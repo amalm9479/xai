@@ -1,7 +1,6 @@
-import { Builder, By, Key, until } from 'selenium-webdriver';
-import firefox from 'selenium-webdriver/firefox';
+import { Builder, By, until } from 'selenium-webdriver';
+import { Options } from 'selenium-webdriver/firefox';
 import chalk from 'chalk';
-const readline = require('readline');
 
 async function launchFirefoxWithProfile() {
   const addresses = [
