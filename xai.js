@@ -1,6 +1,6 @@
-const { Builder, By, Key, until } = require('selenium-webdriver');
-const firefox = require('selenium-webdriver/firefox');
-const chalk = require('chalk');
+import { Builder, By, Key, until } from 'selenium-webdriver';
+import firefox from 'selenium-webdriver/firefox';
+import chalk from 'chalk';
 const readline = require('readline');
 
 async function launchFirefoxWithProfile() {
